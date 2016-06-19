@@ -25,7 +25,7 @@ var x = Math.floor((Math.random() * 255) + 1);
 
 Update(); */
 
-window.addEventListener("orientationchange", function(){
+window.addEventListener("resize", function(){
 	var r = Math.floor((Math.random() * 255) + 1);
 	var g = Math.floor((Math.random() * 255) + 1);
 	var b = Math.floor((Math.random() * 255) + 1);
