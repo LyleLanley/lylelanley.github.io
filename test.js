@@ -31,7 +31,7 @@ window.addEventListener("orientationchange", function(){
 	var b = Math.floor((Math.random() * 255) + 1);
     canvas.width = window.innerWidth;
 	canvas.height = window.innerHeight;
-	c.fillStyle = 'rgb('+r+','+g+','+b+')';
+	/* c.fillStyle = 'rgb('+r+','+g+','+b+')'; */
 	c.clearRect(0,0,canvas.width, canvas.height);
 	c.fillRect(0, 0, canvas.width, canvas.height);
 	
