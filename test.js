@@ -33,7 +33,9 @@ window.addEventListener("orientationchange", function(){
 	canvas.height = window.innerHeight;
 	c.fillStyle = 'rgb('+r+','+g+','+b+')';
 	c.clearRect(0,0,canvas.width, canvas.height);
-	
+	 canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	c.fillStyle = 'rgb('+r+','+g+','+b+')';
 	c.fillRect(0, 0, canvas.width, canvas.height);
 	
 });
