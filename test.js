@@ -23,7 +23,7 @@ function Update(){
 	c.clearRect(0,0,canvas.width, canvas.height);
 	c.fillStyle = 'rgb('+r+','+g+','+b+')';
 	c.fillRect(0, 0, canvas.width, canvas.height);
-	
+	window.requestAnimationFrame(Update);
 }
 
 Update();
