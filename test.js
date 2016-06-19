@@ -25,6 +25,8 @@ var x = Math.floor((Math.random() * 255) + 1);
 
 Update(); */
 
+fill();
+
 window.addEventListener("orientationchange", function(){
 	var r = Math.floor((Math.random() * 255) + 1);
 	var g = Math.floor((Math.random() * 255) + 1);
@@ -39,3 +41,19 @@ window.addEventListener("orientationchange", function(){
 	c.fillRect(0, 0, canvas.width, canvas.height);
 	
 });
+
+function fill(){
+	var r = Math.floor((Math.random() * 255) + 1);
+	var g = Math.floor((Math.random() * 255) + 1);
+	var b = Math.floor((Math.random() * 255) + 1);
+    canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	c.fillStyle = 'rgb('+r+','+g+','+b+')';
+	c.clearRect(0,0,canvas.width, canvas.height);
+	 canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	c.fillStyle = 'rgb('+r+','+g+','+b+')';
+	c.fillRect(0, 0, canvas.width, canvas.height);
+	
+	
+}
