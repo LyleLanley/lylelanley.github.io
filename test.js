@@ -30,7 +30,7 @@ Update();
 
 
 
-/* window.addEventListener("orientationchange", function(){
+window.addEventListener("orientationchange", function(){
 	var r = Math.floor((Math.random() * 255) + 1);
 	var g = Math.floor((Math.random() * 255) + 1);
 	var b = Math.floor((Math.random() * 255) + 1);
@@ -59,4 +59,4 @@ function fill(){
 	c.fillRect(0, 0, canvas.width, canvas.height);
 	
 	
-} */
+} 
