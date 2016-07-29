@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Synth</title>
+  <script src="sound.js"></script>
+  <script src="PlayNote.js"></script>
+<script src="KeyCodes.js"></script>
+  
+</head>
+
+<!-- the inline CSS on the body ("margin: 0px;") removes the extra space
+     around the canvas, making it flush with the edge of the page -->
+<body style="margin: 0px;">
+
+<br /><br /><br /><br /><br /><br />
+
+<br />
+
+Oscilator
+
+<br />
+<p id="demo"> 0</p>
+Attack
+<input type="range" id="attack" value="1" min="0" max="100">
+Decay
+<input type="range" id="decay" value="1" min="0" max="100">
+Volume
+<input type="range" id="volume" value="1" min="0" max="50">
+Pan
+<input type="range" id="pan" value="2" min="-10" max="10">
+
+<select id="waveform">
+  <option>sine</option>
+  <option>triangle</option>
+  <option>sawtooth</option>
+  <option>square</option>
+</select>
+<br />
+Pitchbend
+<input type="range" id="pitchbend" value="0" min="0" max="3000">
+<br />
+<br />
+Echo
+<br />
+Delay
+<input type="range" id="echodelay" value="0" min="0" max="100">
+Feedback
+<input type="range" id="echofeedback" value="0" min="0" max="10">
+Filter
+<input type="range" id="echofilter" value="0" min="0" max="3000">
+<br />
+<br />
+Reverb
+<br />
+Duration
+<input type="range" id="reverbduration" value="1" min="1" max="10">
+Decay
+<input type="range" id="reverbdecay" value="0" min="0" max="10">
+
+<br />
+width
+<input type="range" id="width" value="30" min="10" max="50">
+
+
+<!-- Direction
+<select id="direction">
+  <option>false</option>
+  <option>true</option>
+</select> -->
+
+
+<br /><br /><br />
+
+
+<br />
+
+
+<canvas id="canvas" width="1000" height="480"/>
+ 
+  <div style="display:none;">
+
+  </div>
+  
+<script src="game.js"> </script>
+  
+</body>
+</html>
